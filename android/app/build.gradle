@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.three_dot_option_bar"
-    compileSdk = 33
+    compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -20,11 +20,14 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.three_dot_option_bar"
-        minSdk 21 // or your desired minimum version
-        targetSdk 33 // or the latest stable version
-        versionCode 1
-        versionName "1.0"
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId = "com.example.three_dot_option_bar"
+        // You can update the following values to match your application needs.
+        // For more information, see: https://flutter.dev/to/review-gradle-config.
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
     }
 
     buildTypes {
